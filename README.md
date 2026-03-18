@@ -1,41 +1,13 @@
 # drug-discovery-ai
 
-**AI-powered drug discovery — molecular generation, property prediction, and docking**
+Stub Python project. Described as an AI drug discovery platform, but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single class in `src/core.py` (DrugDiscoveryAi) with placeholder methods that each return a fixed dictionary without doing any real work. There is no molecular modeling, no drug candidate screening, no computational chemistry - just stubs.
 
-## Quick Start
-```python
-from src.core import DrugDiscoveryAi
- instance = DrugDiscoveryAi()
-r = instance.search(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing). No chemistry, bioinformatics, or drug discovery libraries are present.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `search()` | Search |
-| `index()` | Index |
-| `rank()` | Rank |
-| `filter()` | Filter |
-| `get_suggestions()` | Get suggestions |
-| `export_results()` | Export results |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
-
-## Test
-```bash
-pytest tests/ -v
-```
-
+Scaffolding only. No working drug discovery functionality exists.
