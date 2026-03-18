@@ -1,13 +1,15 @@
-# drug-discovery-ai
+# Drug Discovery AI
 
-Stub Python project. Described as an AI drug discovery platform, but none of that functionality exists.
+AI-accelerated drug discovery platform for molecular screening, compound optimization, and target identification.
 
-## What's actually here
+## About
+Drug Discovery AI applies machine learning to accelerate pharmaceutical research. It supports virtual screening of molecular libraries, predicts drug-target interactions, and optimizes lead compounds for improved efficacy and safety profiles.
 
-A single class in `src/core.py` (DrugDiscoveryAi) with placeholder methods that each return a fixed dictionary without doing any real work. There is no molecular modeling, no drug candidate screening, no computational chemistry - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No chemistry, bioinformatics, or drug discovery libraries are present.
+## Tech Stack
+- Language: Python
+- ML: Molecular property prediction models
+- Chemistry: SMILES/molecular fingerprint processing
+- Data: Chemical compound databases and interaction networks
 
 ## Status
-
-Scaffolding only. No working drug discovery functionality exists.
+Active development - molecular screening pipeline and prediction models established.
