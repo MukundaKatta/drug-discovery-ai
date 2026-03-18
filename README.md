@@ -1,63 +1,43 @@
-# Drug Discovery Ai
+# drug-discovery-ai
 
-AI drug discovery — molecular generation and property prediction
+**AI-powered drug discovery — molecular generation, property prediction, and docking**
 
-## Features
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-- Api
-Graph Builder
-Models - Generator
-Models - Gnn
-Models - Property Predictor
-Molecule Parser
-Visualizer
-
-## Tech Stack
-
-- **Language:** Python
-- **Framework:** FastAPI
-- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
-- **Containerization:** Docker + Docker Compose
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.11+
-- Docker & Docker Compose (optional)
-
-### Installation
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/drug-discovery-ai.git
-cd drug-discovery-ai
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
-### Running
+## Quick Start
+```python
+from src.core import DrugDiscoveryAi
+ instance = DrugDiscoveryAi()
+r = instance.search(input="test")
+```
 
+## CLI
 ```bash
-uvicorn app.main:app --reload
+python -m src status
+python -m src run --input "data"
 ```
 
-### Docker
+## API
+| Method | Description |
+|--------|-------------|
+| `search()` | Search |
+| `index()` | Index |
+| `rank()` | Rank |
+| `filter()` | Filter |
+| `get_suggestions()` | Get suggestions |
+| `export_results()` | Export results |
+| `get_stats()` | Get stats |
+| `reset()` | Reset |
 
+## Test
 ```bash
-docker-compose up
-```
-
-## Project Structure
-
-```
-drug-discovery-ai/
-├── src/           # Source code
-├── tests/         # Test suite
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
+pytest tests/ -v
 ```
 
 ## License
-
-MIT
+(c) 2026 Officethree Technologies. All Rights Reserved.
