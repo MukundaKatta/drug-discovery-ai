@@ -1,30 +1,63 @@
-# drug-discovery-ai
+# Drug Discovery Ai
 
-**AI drug discovery — molecular generation and property prediction**
+AI drug discovery — molecular generation and property prediction
 
-## Install
+## Features
+
+- Api
+Graph Builder
+Models - Generator
+Models - Gnn
+Models - Property Predictor
+Molecule Parser
+Visualizer
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/drug-discovery-ai.git
+cd drug-discovery-ai
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **molecule_parser**
-- **graph_builder**
-- **gnn**
-- **property_predictor**
-- **generator**
-- **visualizer**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+drug-discovery-ai/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
